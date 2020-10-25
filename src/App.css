@@ -1,0 +1,264 @@
+:root {
+  --mainLightBlue: #00c4e7;
+  --mainDarkBlue: #2f72df;
+  --mainPurple: #7e4ce3;
+  --mainWhite: #ffffff;
+  --maingrey: #2e3b6b;
+  --maindark: #0e2142;
+  --mainblack: #1b1c1d;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-purple {
+  background-color: #b084cc !important;
+  color: #000;
+}
+.text-purple {
+  color: #b084cc;
+}
+
+.sidenav {
+  background-color: var(--maindark) !important;
+  padding: 20px;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-slides {
+  padding: 10px;
+}
+
+.single-movie {
+  border-radius: 6px;
+}
+
+.active-sidebar {
+  background: none !important;
+}
+
+.genre-header {
+  color: #aaa !important;
+  padding-top: 40px !important;
+  text-transform: uppercase !important;
+}
+
+.genre-header:hover {
+  color: #fff !important;
+}
+
+.play-button {
+  background-color: var(--maindark) !important;
+  color: var(--mainWhite) !important;
+  margin-top: 20px !important;
+}
+
+.backdrop_link {
+  font-size: 16px;
+  color: var(--mainLightBlue);
+  text-decoration: underline;
+}
+
+.main {
+  background-color: var(--mainblack) !important;
+  min-height: 100vh;
+}
+
+/* .movie {
+    background-color: var(--maingrey)!important;
+} */
+
+.logo {
+  font-weight: 800;
+  font-size: 24px;
+
+  margin-bottom: 20px;
+  color: var(--mainWhite);
+}
+
+.mobile-logo {
+  font-weight: 800;
+  font-size: 24px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--mainWhite);
+}
+
+.ml-3 {
+  margin-left: 25px;
+}
+
+.Genre_List:before {
+  height: 0px !important;
+}
+
+.sidenav-item {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h1 {
+  color: var(--mainWhite);
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+h3 {
+  color: #f8f8f8 !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 13px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.black-bg {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #010202;
+}
+
+.navbar {
+  background-color: var(--maindark) !important;
+  padding-top: 20px;
+}
+
+.test {
+  background: rgb(25, 24, 43);
+  background: linear-gradient(
+      0deg,
+      rgba(25, 24, 43, 0.5) 0%,
+      rgba(50, 96, 106, 0.6) 100%
+    ),
+    url(https://image.tmdb.org/t/p/w500/stmYfCUGd8Iy6kAMBr6AmWqx8Bq.jpg) center
+      center;
+  background-size: cover;
+  min-height: 90vh;
+  padding: 40px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.search-list {
+  z-index: 9;
+  position: absolute;
+}
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+
+.mobile-search {
+  width: 50px;
+  padding-left: 6px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.mobile-search:focus-within {
+  width: 100%;
+}
+
+.text {
+  margin: 40px 0px 40px 0px;
+}
+
+/* .loader-container {
+  background-color: var(--maindark);
+  min-height: 100vh;
+  z-index: 4;
+} */
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(27, 28, 29, 0.9);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: center;
+}
+
+.loader-text {
+  font-size: 14px;
+  color: #b084cc;
+  font-weight: bold;
+}
+
+.tag {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--mainWhite);
+  text-decoration: dotted;
+  font-size: 14px;
+}
+
+.ts {
+  fill: #b084cc;
+  stroke: #b084cc;
+}
+
+.tst {
+  fill: #a25dcc;
+  stroke: #a25dcc;
+}
